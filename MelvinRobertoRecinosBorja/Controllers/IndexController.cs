@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace MelvinRobertoRecinosBorja.Controllers
 {
     public class IndexController : Controller
@@ -17,7 +18,11 @@ namespace MelvinRobertoRecinosBorja.Controllers
         [HttpPost]
         public ActionResult Mostrar(Int32 monto)
         {
+            if (monto == 0)
+            {
+                
 
+            }
 
             return View();
         }
